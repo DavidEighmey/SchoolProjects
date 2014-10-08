@@ -1,0 +1,4 @@
+to test this computer simulator
+
+1. run make to make the file
+2. then run “./sample dump
