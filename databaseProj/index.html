@@ -1,0 +1,66 @@
+<html>
+<head>
+<!-- MOBILE SETTINGS -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<script type="text/javascript" src="js/jquery-2.0.3.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.3.custom.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+<link type="text/css" rel="stylesheet" href="css/custom.css" />
+
+<title>Social Game Revew & Suggestion Site</title>
+</head>
+<body>
+<!-- FB API -->
+<div id="fb-root"></div>
+<div class="navbar navbar-default navbar-fixed-top">
+	<div class="navbar-header">
+		<div class="navbar-brand">
+			GameVocate
+		</div>
+	</div>
+	<ul class="nav navbar-nav">
+		<li class="active">
+			<a href="#" onclick="listGames(this)" close="hideListGames()">Games</a>
+		</li>
+		<li>
+			<a href="#" onclick="listGenres(this)" close="hideListGenres()">Genres</a>
+		</li>
+	</ul>
+	<ul class="nav navbar-nav navbar-right">
+		<li id="nav_acct" class="dropdown">
+			<a id="nav_acct_btn" class="dropdown-toggle" data-toggle="dropdown" href="#">Login</a>
+			<ul id="nav_acct_dropdown" class="dropdown-menu">
+				<li>
+					<a id="fblogin" onclick="#fb_login_url" href="#"><img class="dropdown-icon" src="images/icon/facebook.png" />Facebook</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+<div class="body-container">
+	<div class="content-container">
+		<div id="game-list-viewport" class="general-viewport">
+			<div id="game-list-container" class="general-container">
+			</div>
+		</div>
+		<div id="genre-list-viewport" class="general-viewport" style="display:none">
+			<div id="genre-list-container" class="general-container">
+			</div>
+		</div>
+		<div class="game-view-viewport">
+			<div class="game-view-container">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="loading">
+	<div class="loading-circle-container">
+	</div>
+</div>
+</body>
+
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+</html>
